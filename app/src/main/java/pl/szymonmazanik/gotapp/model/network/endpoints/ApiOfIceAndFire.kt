@@ -10,6 +10,7 @@ import retrofit2.http.GET
 import retrofit2.http.Query
 
 interface ApiOfIceAndFire {
+
     /**
      * Get the Characters from the API
      */
@@ -20,6 +21,9 @@ interface ApiOfIceAndFire {
     ): Single<List<Character>>
 
     companion object {
+        /**
+         * Provides [ApiOfIceAndFire] instance
+         */
         fun getService(): ApiOfIceAndFire {
             val retrofit = Retrofit.Builder()
                 .baseUrl(BASE_URL)

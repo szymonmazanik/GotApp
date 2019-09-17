@@ -10,6 +10,5 @@ import pl.szymonmazanik.gotapp.model.entity.Character
  * @param id of [Character]
  * @return Nullable [Character].
  */
-fun LiveData<PagedList<Character>>.getCharacterById(id: Long): Character? {
-    return value?.find { it.id == id }
-}
+fun LiveData<PagedList<Character>>.getCharacterById(id: Long) =
+    value?.find { it.id == id }

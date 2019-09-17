@@ -6,11 +6,8 @@ import androidx.lifecycle.Transformations
 import androidx.lifecycle.ViewModel
 import androidx.paging.LivePagedListBuilder
 import androidx.paging.PagedList
-import io.reactivex.Observable
 import io.reactivex.disposables.CompositeDisposable
-import pl.szymonmazanik.gotapp.R
 import pl.szymonmazanik.gotapp.model.entity.Character
-import pl.szymonmazanik.gotapp.model.network.endpoints.ApiOfIceAndFire
 import pl.szymonmazanik.gotapp.model.source.CharactersDataSource
 import pl.szymonmazanik.gotapp.utils.Event
 import pl.szymonmazanik.gotapp.utils.factory.CharactersDataSourceFactory

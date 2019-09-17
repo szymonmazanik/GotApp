@@ -6,6 +6,9 @@ import io.reactivex.disposables.CompositeDisposable
 import pl.szymonmazanik.gotapp.model.entity.Character
 import pl.szymonmazanik.gotapp.model.source.CharactersDataSource
 
+/**
+ * Factory class for [CharactersDataSource]
+ */
 class CharactersDataSourceFactory(private val compositeDisposable: CompositeDisposable) :
     DataSource.Factory<Long, Character>() {
 

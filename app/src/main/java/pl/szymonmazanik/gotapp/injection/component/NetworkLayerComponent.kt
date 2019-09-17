@@ -1,8 +1,8 @@
 package pl.szymonmazanik.gotapp.injection.component
 
-import dagger.Component
-import pl.szymonmazanik.gotapp.injection.modules.OfIceAncFireModule
-import javax.inject.Singleton
+//import dagger.Component
+//
+//import javax.inject.Singleton
 
 
 ///**

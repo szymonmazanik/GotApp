@@ -12,6 +12,7 @@ import pl.szymonmazanik.gotapp.R
 import pl.szymonmazanik.gotapp.databinding.FragmentCharacterDetailBinding
 import pl.szymonmazanik.gotapp.utils.extensions.getCharacterById
 import pl.szymonmazanik.gotapp.utils.extensions.getViewModel
+import timber.log.Timber
 
 
 /**
@@ -55,5 +56,6 @@ class CharacterDetailFragment : Fragment() {
 
     private fun showError() {
         showError = true
+        Timber.e("Character with id ${args.characterId} not bound")
     }
 }

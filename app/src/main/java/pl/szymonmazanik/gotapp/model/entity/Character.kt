@@ -1,7 +1,10 @@
 package pl.szymonmazanik.gotapp.model.entity
 
+/**
+ * Data class holding Characters from API
+ */
 data class Character(
-    var id: Long,
+    var id: Long = -1L,
     val url: String,
     val name: String,
     val gender: String,

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">GotApp</string>
+    <string name="title_character_list">Characters</string>
+    <string name="title_character_detail">Character Detail</string>
+    <string name="error_loading_characters">Error while loading characters</string>
+    <string name="id">ID </string>
+    <string name="url">URL</string>
+    <string name="gender">Gender</string>
+    <string name="culture">Culture</string>
+    <string name="born">Born</string>
+    <string name="died">Died</string>
+    <string name="titles">Titles</string>
+    <string name="father">Father</string>
+    <string name="mother">Mother</string>
+    <string name="spouse">Spouse</string>
+    <string name="aliases">Aliases</string>
+    <string name="books">Books</string>
+    <string name="pov">Pov</string>
+    <string name="tv">TV</string>
+    <string name="played_by">Played by</string>
+    <string name="allegiances">Allegiances</string>
+    <string name="error_initial">Could not load any characters</string>
+    <string name="error_after">Could not load more characters</string>
+    <string name="detail_error">Could not load character</string>
+</resources>

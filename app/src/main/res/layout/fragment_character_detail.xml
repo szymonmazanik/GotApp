@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="FragmentCharacterDetailBinding">
+
+        <variable
+            name="character"
+            type="pl.szymonmazanik.gotapp.model.entity.Character" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/character_name"
+                style="@style/headerText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="@{character.name}"
+                tools:text="Name" />
+
+            <RelativeLayout
+                style="@style/characterDetailsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/character_id"
+                    style="@style/profileDetailsTextMain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{String.valueOf(character.id)}"
+                    tools:text="Placeholder" />
+
+                <TextView
+                    style="@style/profileDetailsMiniText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/character_id"
+                    android:text="@string/id" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                style="@style/characterDetailsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/character_url"
+                    style="@style/profileDetailsTextMain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{String.valueOf(character.id)}"
+                    tools:text="Placeholder" />
+
+                <TextView
+                    style="@style/profileDetailsMiniText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/character_url"
+                    android:text="@string/url" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/characterDetailsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/character_gender"
+                    style="@style/profileDetailsTextMain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{String.valueOf(character.gender)}"
+                    tools:text="Placeholder" />
+
+                <TextView
+                    style="@style/profileDetailsMiniText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/character_gender"
+                    android:text="@string/gender" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/characterDetailsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/character_culture"
+                    style="@style/profileDetailsTextMain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{String.valueOf(character.culture)}"
+                    tools:text="Placeholder" />
+
+                <TextView
+                    style="@style/profileDetailsMiniText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/character_culture"
+                    android:text="@string/culture" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/characterDetailsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/character_born"
+                    style="@style/profileDetailsTextMain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{String.valueOf(character.born)}"
+                    tools:text="Placeholder" />
+
+                <TextView
+                    style="@style/profileDetailsMiniText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/character_born"
+                    android:text="@string/born" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/characterDetailsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/character_died"
+                    style="@style/profileDetailsTextMain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{String.valueOf(character.died)}"
+                    tools:text="Placeholder" />
+
+                <TextView
+                    style="@style/profileDetailsMiniText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/character_died"
+                    android:text="@string/died" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/characterDetailsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/character_titles"
+                    style="@style/profileDetailsTextMain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{String.valueOf(character.titles.toString())}"
+                    tools:text="Placeholder" />
+
+                <TextView
+                    style="@style/profileDetailsMiniText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/character_titles"
+                    android:text="@string/titles" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/characterDetailsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/character_aliases"
+                    style="@style/profileDetailsTextMain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{String.valueOf(character.aliases.toString())}"
+                    tools:text="Placeholder" />
+
+                <TextView
+                    style="@style/profileDetailsMiniText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/character_aliases"
+                    android:text="@string/aliases" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/characterDetailsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/character_father"
+                    style="@style/profileDetailsTextMain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{String.valueOf(character.father)}"
+                    tools:text="Placeholder" />
+
+                <TextView
+                    style="@style/profileDetailsMiniText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/character_father"
+                    android:text="@string/father" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/characterDetailsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/character_mother"
+                    style="@style/profileDetailsTextMain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{String.valueOf(character.mother)}"
+                    tools:text="Placeholder" />
+
+                <TextView
+                    style="@style/profileDetailsMiniText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/character_mother"
+                    android:text="@string/mother" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/characterDetailsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/character_spouse"
+                    style="@style/profileDetailsTextMain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{String.valueOf(character.spouse)}"
+                    tools:text="Placeholder" />
+
+                <TextView
+                    style="@style/profileDetailsMiniText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/character_spouse"
+                    android:text="@string/spouse" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/characterDetailsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/character_allegiances"
+                    style="@style/profileDetailsTextMain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{String.valueOf(character.allegiances.toString())}"
+                    tools:text="Placeholder" />
+
+                <TextView
+                    style="@style/profileDetailsMiniText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/character_allegiances"
+                    android:text="@string/allegiances" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/characterDetailsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/character_books"
+                    style="@style/profileDetailsTextMain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{String.valueOf(character.books.toString())}"
+                    tools:text="Placeholder" />
+
+                <TextView
+                    style="@style/profileDetailsMiniText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/character_books"
+                    android:text="@string/books" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/characterDetailsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/character_pov_books"
+                    style="@style/profileDetailsTextMain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{String.valueOf(character.povBooks.toString())}"
+                    tools:text="Placeholder" />
+
+                <TextView
+                    style="@style/profileDetailsMiniText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/character_pov_books"
+                    android:text="@string/pov" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/characterDetailsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/character_tv_series"
+                    style="@style/profileDetailsTextMain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{String.valueOf(character.tvSeries.toString())}"
+                    tools:text="Placeholder" />
+
+                <TextView
+                    style="@style/profileDetailsMiniText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/character_tv_series"
+                    android:text="@string/tv" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/characterDetailsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/character_played_by"
+                    style="@style/profileDetailsTextMain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{String.valueOf(character.playedBy.toString())}"
+                    tools:text="Placeholder" />
+
+                <TextView
+                    style="@style/profileDetailsMiniText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/character_played_by"
+                    android:text="@string/played_by" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</layout>

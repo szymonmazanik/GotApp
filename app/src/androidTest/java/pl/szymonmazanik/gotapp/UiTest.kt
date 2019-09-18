@@ -25,9 +25,9 @@ class UiTest {
     var rule: ActivityTestRule<CharacterListActivity> =
         ActivityTestRule(CharacterListActivity::class.java)
 
-    lateinit var instrumentationContext: Context
+    private lateinit var instrumentationContext: Context
 
-    var isTablet = false
+    private var isTablet = false
 
     @Before
     fun setup() {
@@ -68,7 +68,7 @@ class UiTest {
 
                 //Press back only on handset
                 if (!isTablet) pressBack()
-            
+
                 Timber.d("Items: $itemsCount Item: $lastOpenedItemIndex")
         }
     }

@@ -51,7 +51,8 @@ class CharacterDetailFragment : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        if (showError) Snackbar.make(view!!, R.string.detail_error, Snackbar.LENGTH_INDEFINITE).show()
+        if (showError)
+            Snackbar.make(view!!, R.string.detail_error, Snackbar.LENGTH_INDEFINITE).show()
     }
 
     private fun showError() {

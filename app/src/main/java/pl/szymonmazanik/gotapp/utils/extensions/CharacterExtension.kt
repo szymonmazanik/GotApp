@@ -10,4 +10,3 @@ fun Character.assignIdFromUrl() {
     id = """\d+$""".toRegex().find(url)?.value?.toLong()
         ?: throw Exception("Could not extract data source id")
 }
-

@@ -16,6 +16,6 @@ class CharacterListActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_characters)
         setSupportActionBar(findViewById(R.id.toolbar))
-        if(BuildConfig.DEBUG) Timber.plant(Timber.DebugTree()) // Plant Tiber only for DEBUG
+        if (BuildConfig.DEBUG) Timber.plant(Timber.DebugTree()) // Plant Tiber only for DEBUG
     }
 }

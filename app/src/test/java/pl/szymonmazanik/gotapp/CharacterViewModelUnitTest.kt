@@ -9,7 +9,8 @@ import pl.szymonmazanik.gotapp.ui.CharacterViewModel
 
 class CharacterViewModelUnitTest {
 
-    @get:Rule val testRule = InstantTaskExecutorRule()
+    @get:Rule
+    val testRule = InstantTaskExecutorRule()
 
     private lateinit var viewModel: CharacterViewModel
 
@@ -18,6 +19,10 @@ class CharacterViewModelUnitTest {
         viewModel = CharacterViewModel()
     }
 
+    /**
+     * Checks if [LiveData] has correct values
+     * Initial id in [Character] is -1 so we assume that if id of each element > 0 then the [LiveData] is fine
+     */
     @Test
     fun testCharacters() {
         viewModel.characters.test()
